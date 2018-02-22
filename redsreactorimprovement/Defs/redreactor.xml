@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Redd_Reactor</defName>
+    <label>RedTek antimatter reactor</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ShipReactor</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>50000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>suitable for powering a base</description>
+    <size>(5,5)</size>
+    <designationCategory>Power</designationCategory>
+    <building>
+      <shipPart>false</shipPart>
+    </building>
+    <costList>
+      <Steel>5000</Steel>
+      <Plasteel>50</Plasteel>
+	  <Uranium>1000</Uranium>
+      <AdvancedComponent>20</AdvancedComponent>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-10000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Hibernatable"/>
+    </comps>
+    <placeWorkers>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Redd_Reactor_Mini</defName>
+    <label>RedTek antimatter mini reactor</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.8,2.8)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ShipReactor</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>50000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>suitable for powering a base</description>
+    <size>(2,2)</size>
+    <designationCategory>Power</designationCategory>
+    <building>
+      <shipPart>false</shipPart>
+    </building>
+    <costList>
+      <Steel>2500</Steel>
+      <Plasteel>25</Plasteel>
+	  <Uranium>500</Uranium>
+      <AdvancedComponent>10</AdvancedComponent>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-7500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Hibernatable"/>
+    </comps>
+    <placeWorkers>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

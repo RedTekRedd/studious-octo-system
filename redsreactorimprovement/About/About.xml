@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Red's Reactor Improvement</name>
+  <author>Red's not Dead</author>
+  <targetVersion>0.18.0000</targetVersion>
+  <url>http://thereisnourl.net</url>
+  <description>Improvement to ship reactor, also adds a mini 2x2 reactor</description>
+</ModMetaData>
